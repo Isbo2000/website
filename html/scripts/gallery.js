@@ -7,7 +7,7 @@ $(document).ready(async function () {
     let groups = await fetchGroups(url);
 
     for (let i in groups) {
-        let group = groups[i];
+        let group = groups[i].replace("%20", " ");
 
         var newGroup = "";
 
