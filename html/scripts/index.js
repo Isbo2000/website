@@ -69,7 +69,7 @@ $(document).ready(function () {
     });
     });
 
-    url = 'http://localhost/website/configs/links.json';
+    url = 'http://[::1]/website/configs/links.json';
     fetch(url).then(response => {return response.json();}).then(function (data) {
         for (let link in data) {
             let newLink = "";
@@ -84,7 +84,7 @@ $(document).ready(function () {
         }
     });
 
-    url = 'http://localhost/website/configs/user.json';
+    url = 'http://[::1]/website/configs/user.json';
     fetch(url).then(response => {return response.json();}).then(function (data) {
         $('#name').text(data["name"]);
 
