@@ -1,6 +1,6 @@
 console.log("Pinging server...")
 
-fetch('https://cdn.isbo.cc').then(response => {
+fetch('http://localhost').then(response => {
     if (response.ok) {
         console.log("Server responded ok!");
     } else {

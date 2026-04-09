@@ -2,7 +2,7 @@ $(document).ready(async function () {
     var min = 200;
     var max = 500;
     
-    const url = "https://cdn.isbo.cc/website/gallery/";
+    const url = "http://localhost/website/gallery/";
 
     let groups = await fetchGroups(url);
 
