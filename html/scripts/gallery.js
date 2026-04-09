@@ -2,7 +2,7 @@ $(document).ready(async function () {
     var min = 200;
     var max = 500;
     
-    const url = "http://localhost/website/gallery/";
+    const url = "http://::1/website/gallery/";
 
     let groups = await fetchGroups(url);
 
